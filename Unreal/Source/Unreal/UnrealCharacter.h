@@ -29,6 +29,12 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UFUNCTION(BlueprintCallable, Category="Dialog")
+	static void GuardFunc();
+
+	UFUNCTION(BlueprintCallable, Category="Dialog")
+	static void PeasantFunc();
+
 protected:
 
 	/** Resets HMD orientation in VR. */
@@ -69,4 +75,3 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 };
-
