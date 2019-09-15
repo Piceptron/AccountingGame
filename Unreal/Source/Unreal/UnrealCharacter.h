@@ -29,7 +29,7 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
-	UFUNCTION(BlueprintCallable, Category="Dialog") 
+	UFUNCTION(BlueprintCallable, Category="Dialog")
 	void BlueprintTest();
 
 protected:

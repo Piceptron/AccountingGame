@@ -134,5 +134,5 @@ void AUnrealCharacter::MoveRight(float Value)
 }
 
 void AUnrealCharacter::BlueprintTest() {
-	// do nothing;
+	// do nothing
 }
