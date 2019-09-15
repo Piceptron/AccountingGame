@@ -30,7 +30,10 @@ public:
 	float BaseLookUpRate;
 
 	UFUNCTION(BlueprintCallable, Category="Dialog")
-	void BlueprintTest();
+	static void GuardFunc();
+
+	UFUNCTION(BlueprintCallable, Category="Dialog")
+	static void PeasantFunc();
 
 protected:
 
@@ -72,4 +75,3 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 };
-

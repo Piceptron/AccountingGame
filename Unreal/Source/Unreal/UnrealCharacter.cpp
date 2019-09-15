@@ -1,5 +1,9 @@
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
+#include <stdlib.h>
+#include <iostream>
+#include <fstream>
+#include <string>
 #include "UnrealCharacter.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
@@ -8,6 +12,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "StringTableRegistry.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AUnrealCharacter
@@ -133,6 +138,33 @@ void AUnrealCharacter::MoveRight(float Value)
 	}
 }
 
-void AUnrealCharacter::BlueprintTest() {
-	// do nothing
+void AUnrealCharacter::GuardFunc() {
+	// //system("python TD.py > %userprofile%\\htn2019.txt");
+	// system("python TD.py > ~/htn2019.txt");
+	// std::ifstream file;
+	// // std::string userprofile = getenv("USERPROFILE");
+	// // file.open(userprofile + "\\htn2019.txt");
+	// file.open("~/htn2019.txt");
+	// std::string given;
+	// std::string sur;
+	// std::string income;
+	// std::getline(file, given);
+	// std::getline(file, sur);
+	// std::getline(file, income);
+	// //LOCTABLE_NEW("DialogStrTbl", "DialogStrTbl");
+	// std::string str = "Hello, my name is " + given + " " + sur + ".";
+	// //FStringTableRegistry::Get().Internal_SetLocTableEntry(TEXT("DialogStrTbl"), TEXT("GuardIntro"), FString(str.c_str()));
+	// //FStringTableRegistry::Get().Internal_SetLocTableEntry(TEXT("DialogStrTbl"), TEXT("GuardIncome"), FString(income.c_str()));
+	// str = "My income is $" + income + ".";
+	// //FStringTableRegistry::Get().Internal_SetLocTableEntry(TEXT("DialogStrTbl"), TEXT("GuardIncomeStr"), FString(str.c_str()));
+
+	// //system("del %userprofile%\\htn2019.txt");
+	// system("rm -rf ~/htn2019.txt");
+
+	// do something
 }
+
+void AUnrealCharacter::PeasantFunc() {
+	
+}
+
