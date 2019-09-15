@@ -132,3 +132,7 @@ void AUnrealCharacter::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
+
+void AUnrealCharacter::BlueprintTest() {
+	// do nothing;
+}

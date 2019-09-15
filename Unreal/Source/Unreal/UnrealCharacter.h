@@ -29,6 +29,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UFUNCTION(BlueprintCallable, Category="Dialog") 
+	void BlueprintTest();
+
 protected:
 
 	/** Resets HMD orientation in VR. */
